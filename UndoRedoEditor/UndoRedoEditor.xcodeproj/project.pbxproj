@@ -23,6 +23,8 @@
 		EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */; };
 		EBE5E1CC2DD233CF0037155A /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1CB2DD233CF0037155A /* SelectImageView.swift */; };
 		EBE5E1CF2DD234A80037155A /* EditorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1CE2DD234A80037155A /* EditorMainView.swift */; };
+		EBE5E1D12DD236EB0037155A /* EditorMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1D02DD236EB0037155A /* EditorMainViewModel.swift */; };
+		EBE5E1D42DD24C080037155A /* EditorState.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1D32DD24C080037155A /* EditorState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarViewModel.swift; sourceTree = "<group>"; };
 		EBE5E1CB2DD233CF0037155A /* SelectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
 		EBE5E1CE2DD234A80037155A /* EditorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainView.swift; sourceTree = "<group>"; };
+		EBE5E1D02DD236EB0037155A /* EditorMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainViewModel.swift; sourceTree = "<group>"; };
+		EBE5E1D32DD24C080037155A /* EditorState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,7 @@
 		EBE5E1A02DD211CC0037155A /* UndoRedoEditor */ = {
 			isa = PBXGroup;
 			children = (
+				EBE5E1D22DD24BE40037155A /* EditorStateManagment */,
 				EBE5E1BC2DD225F80037155A /* Core */,
 				EBE5E1B32DD213D50037155A /* Models */,
 				EBE5E1B02DD212600037155A /* Helpers */,
@@ -157,8 +162,17 @@
 			isa = PBXGroup;
 			children = (
 				EBE5E1CE2DD234A80037155A /* EditorMainView.swift */,
+				EBE5E1D02DD236EB0037155A /* EditorMainViewModel.swift */,
 			);
 			path = EditorMainView;
+			sourceTree = "<group>";
+		};
+		EBE5E1D22DD24BE40037155A /* EditorStateManagment */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5E1D32DD24C080037155A /* EditorState.swift */,
+			);
+			path = EditorStateManagment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +246,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE5E1C42DD226FF0037155A /* ToolbarButtonModifier.swift in Sources */,
+				EBE5E1D12DD236EB0037155A /* EditorMainViewModel.swift in Sources */,
 				EBE5E1C72DD227AF0037155A /* ToolsbarView.swift in Sources */,
 				EBE5E1C22DD226B90037155A /* FilterButtonModifier.swift in Sources */,
+				EBE5E1D42DD24C080037155A /* EditorState.swift in Sources */,
 				EBE5E1B92DD214C20037155A /* FilterItem.swift in Sources */,
 				EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */,
 				EBE5E1CC2DD233CF0037155A /* SelectImageView.swift in Sources */,
