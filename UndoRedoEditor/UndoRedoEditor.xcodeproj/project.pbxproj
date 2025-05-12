@@ -19,6 +19,8 @@
 		EBE5E1BF2DD226360037155A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1BE2DD226360037155A /* PickerView.swift */; };
 		EBE5E1C22DD226B90037155A /* FilterButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C12DD226B90037155A /* FilterButtonModifier.swift */; };
 		EBE5E1C42DD226FF0037155A /* ToolbarButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */; };
+		EBE5E1C72DD227AF0037155A /* ToolsbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C62DD227AF0037155A /* ToolsbarView.swift */; };
+		EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		EBE5E1BE2DD226360037155A /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EBE5E1C12DD226B90037155A /* FilterButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonModifier.swift; sourceTree = "<group>"; };
 		EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtonModifier.swift; sourceTree = "<group>"; };
+		EBE5E1C62DD227AF0037155A /* ToolsbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsbarView.swift; sourceTree = "<group>"; };
+		EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,8 +114,9 @@
 		EBE5E1BC2DD225F80037155A /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				EBE5E1C02DD226A50037155A /* UIModifiers */,
+				EBE5E1C52DD2278D0037155A /* Tools */,
 				EBE5E1BD2DD226130037155A /* Picker */,
+				EBE5E1C02DD226A50037155A /* UIModifiers */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -131,6 +136,15 @@
 				EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */,
 			);
 			path = UIModifiers;
+			sourceTree = "<group>";
+		};
+		EBE5E1C52DD2278D0037155A /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5E1C62DD227AF0037155A /* ToolsbarView.swift */,
+				EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */,
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,12 +218,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBE5E1C42DD226FF0037155A /* ToolbarButtonModifier.swift in Sources */,
+				EBE5E1C72DD227AF0037155A /* ToolsbarView.swift in Sources */,
 				EBE5E1C22DD226B90037155A /* FilterButtonModifier.swift in Sources */,
 				EBE5E1B92DD214C20037155A /* FilterItem.swift in Sources */,
 				EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */,
 				EBE5E1B72DD2146F0037155A /* ImageSource.swift in Sources */,
 				EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */,
 				EBE5E1BF2DD226360037155A /* PickerView.swift in Sources */,
+				EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */,
 				EBE5E1A42DD211CC0037155A /* ContentView.swift in Sources */,
 				EBE5E1B52DD214080037155A /* DrawingTools.swift in Sources */,
 				EBE5E1A22DD211CC0037155A /* UndoRedoEditorApp.swift in Sources */,

@@ -25,3 +25,20 @@ struct ToolbarButtonModifier: ButtonStyle {
     }
 }
 
+struct ToolbarButtonStateModifier: ButtonStyle {
+    let isActive: Bool
+
+    func makeBody(configuration: Configuration) -> some View {
+        let fillColor = isActive ? Color.accentColor : Color.gray
+        let bgColor = isActive ? Color.accentColor.opacity(0.2) : Color.clear
+
+        return configuration.label
+            .font(.system(size: 20, weight: .medium))
+            .padding(5)
+            .background(Circle().fill(bgColor))
+            .foregroundColor(fillColor)
+            .scaleEffect(configuration.isPressed ? 0.95 : 1.0)
+            .animation(.interactiveSpring(), value: configuration.isPressed)
+    }
+}
+
