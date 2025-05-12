@@ -18,6 +18,7 @@
 		EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1BA2DD225180037155A /* ImageErrors.swift */; };
 		EBE5E1BF2DD226360037155A /* PickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1BE2DD226360037155A /* PickerView.swift */; };
 		EBE5E1C22DD226B90037155A /* FilterButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C12DD226B90037155A /* FilterButtonModifier.swift */; };
+		EBE5E1C42DD226FF0037155A /* ToolbarButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		EBE5E1BA2DD225180037155A /* ImageErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageErrors.swift; sourceTree = "<group>"; };
 		EBE5E1BE2DD226360037155A /* PickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerView.swift; sourceTree = "<group>"; };
 		EBE5E1C12DD226B90037155A /* FilterButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonModifier.swift; sourceTree = "<group>"; };
+		EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE5E1C12DD226B90037155A /* FilterButtonModifier.swift */,
+				EBE5E1C32DD226FF0037155A /* ToolbarButtonModifier.swift */,
 			);
 			path = UIModifiers;
 			sourceTree = "<group>";
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBE5E1C42DD226FF0037155A /* ToolbarButtonModifier.swift in Sources */,
 				EBE5E1C22DD226B90037155A /* FilterButtonModifier.swift in Sources */,
 				EBE5E1B92DD214C20037155A /* FilterItem.swift in Sources */,
 				EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */,
