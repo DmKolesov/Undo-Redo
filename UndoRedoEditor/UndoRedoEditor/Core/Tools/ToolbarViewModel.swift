@@ -15,13 +15,13 @@ final class ToolsViewModel: ObservableObject {
     @Published var currentTool: ToolMode = .none {
         didSet {
             showDrawingTools = (currentTool == .draw)
-            showFilters = (currentTool == .filter)
+            showFilterTools = (currentTool == .filter)
             print("Current tool: \(currentTool)")
         }
     }
     
     @Published var showDrawingTools = false
-    @Published var showFilters = false
+    @Published var showFilterTools = false
 
     @Published var canUndo = false
     @Published var canRedo = false
@@ -35,8 +35,8 @@ final class ToolsViewModel: ObservableObject {
     func toggle(tool: ToolMode) {
          currentTool = (currentTool == tool) ? .none : tool
          showDrawingTools = (currentTool == .draw)
-         showFilters      = (currentTool == .filter)
+         showFilterTools      = (currentTool == .filter)
  
-         print("ToolsViewModel.toggle -> currentTool=\(currentTool), showDrawingTools=\(showDrawingTools), showFilters=\(showFilters)")
+         print("ToolsViewModel.toggle -> currentTool=\(currentTool), showDrawingTools=\(showDrawingTools), showFilters=\(showFilterTools)")
      }
 }
