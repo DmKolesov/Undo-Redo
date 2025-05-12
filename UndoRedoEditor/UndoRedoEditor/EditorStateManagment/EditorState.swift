@@ -11,8 +11,8 @@ import PencilKit
 
 struct EditorState {
     var baseImage: UIImage
-    var drawning: PKDrawing
-    var filters: [FilterItem]
+    var drawning: PKDrawing = PKDrawing()
+    var filters: [FilterItem] = []
 }
 
 protocol EditorCommand: AnyObject {
@@ -39,7 +39,7 @@ final class DrawStrokeCommand: EditorCommand {
     }
 }
 
-final class AppluFilterCommand: EditorCommand {
+final class ApplyFilterCommand: EditorCommand {
     let id: UUID = UUID()
     private let filter: FilterItem
     
