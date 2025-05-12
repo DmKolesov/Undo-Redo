@@ -15,6 +15,7 @@
 		EBE5E1B52DD214080037155A /* DrawingTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1B42DD214080037155A /* DrawingTools.swift */; };
 		EBE5E1B72DD2146F0037155A /* ImageSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1B62DD2146F0037155A /* ImageSource.swift */; };
 		EBE5E1B92DD214C20037155A /* FilterItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1B82DD214C20037155A /* FilterItem.swift */; };
+		EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1BA2DD225180037155A /* ImageErrors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EBE5E1B42DD214080037155A /* DrawingTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingTools.swift; sourceTree = "<group>"; };
 		EBE5E1B62DD2146F0037155A /* ImageSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSource.swift; sourceTree = "<group>"; };
 		EBE5E1B82DD214C20037155A /* FilterItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterItem.swift; sourceTree = "<group>"; };
+		EBE5E1BA2DD225180037155A /* ImageErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageErrors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE5E1B12DD2126C0037155A /* PreviewContainer.swift */,
+				EBE5E1BA2DD225180037155A /* ImageErrors.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				EBE5E1B92DD214C20037155A /* FilterItem.swift in Sources */,
 				EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */,
 				EBE5E1B72DD2146F0037155A /* ImageSource.swift in Sources */,
+				EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */,
 				EBE5E1A42DD211CC0037155A /* ContentView.swift in Sources */,
 				EBE5E1B52DD214080037155A /* DrawingTools.swift in Sources */,
 				EBE5E1A22DD211CC0037155A /* UndoRedoEditorApp.swift in Sources */,
