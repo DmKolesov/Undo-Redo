@@ -22,6 +22,7 @@
 		EBE5E1C72DD227AF0037155A /* ToolsbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C62DD227AF0037155A /* ToolsbarView.swift */; };
 		EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */; };
 		EBE5E1CC2DD233CF0037155A /* SelectImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1CB2DD233CF0037155A /* SelectImageView.swift */; };
+		EBE5E1CF2DD234A80037155A /* EditorMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1CE2DD234A80037155A /* EditorMainView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		EBE5E1C62DD227AF0037155A /* ToolsbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsbarView.swift; sourceTree = "<group>"; };
 		EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolbarViewModel.swift; sourceTree = "<group>"; };
 		EBE5E1CB2DD233CF0037155A /* SelectImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageView.swift; sourceTree = "<group>"; };
+		EBE5E1CE2DD234A80037155A /* EditorMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorMainView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +118,7 @@
 		EBE5E1BC2DD225F80037155A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				EBE5E1CD2DD2346B0037155A /* EditorMainView */,
 				EBE5E1C52DD2278D0037155A /* Tools */,
 				EBE5E1BD2DD226130037155A /* Picker */,
 				EBE5E1C02DD226A50037155A /* UIModifiers */,
@@ -148,6 +151,14 @@
 				EBE5E1C82DD227E80037155A /* ToolbarViewModel.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		EBE5E1CD2DD2346B0037155A /* EditorMainView */ = {
+			isa = PBXGroup;
+			children = (
+				EBE5E1CE2DD234A80037155A /* EditorMainView.swift */,
+			);
+			path = EditorMainView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,6 +239,7 @@
 				EBE5E1CC2DD233CF0037155A /* SelectImageView.swift in Sources */,
 				EBE5E1B72DD2146F0037155A /* ImageSource.swift in Sources */,
 				EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */,
+				EBE5E1CF2DD234A80037155A /* EditorMainView.swift in Sources */,
 				EBE5E1BF2DD226360037155A /* PickerView.swift in Sources */,
 				EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */,
 				EBE5E1A42DD211CC0037155A /* ContentView.swift in Sources */,
