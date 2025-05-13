@@ -10,9 +10,10 @@ import SwiftUI
 import PencilKit
 
 struct EditorState {
-    var baseImage: UIImage
-    var drawning: PKDrawing
-    var filters: [FilterItem]
+    var baseImage: UIImage? = nil
+    var drawning: PKDrawing = PKDrawing()
+    var filters: [FilterItem] = []
+    //var textOverlays: [TextOverlay] = []
 }
 
 protocol EditorCommand: AnyObject {
@@ -20,6 +21,8 @@ protocol EditorCommand: AnyObject {
     func execute(on state: inout EditorState)
     func undo(on state: inout EditorState)
 }
+
+
 
 final class DrawStrokeCommand: EditorCommand {
     
@@ -39,7 +42,7 @@ final class DrawStrokeCommand: EditorCommand {
     }
 }
 
-final class AppluFilterCommand: EditorCommand {
+final class ApplyFilterCommand: EditorCommand {
     let id: UUID = UUID()
     private let filter: FilterItem
     
@@ -95,3 +98,19 @@ final class CommandHistoryService: ObservableObject {
         canRedo = !redoStack.isEmpty
     }
 }
+extension CommandHistoryService {
+
+   func clearHistory() {
+        undoStack.removeAll()
+        redoStack.removeAll()
+        updateFlags()
+    }
+    
+    func reset(to newState: EditorState) {
+          undoStack.removeAll()
+          redoStack.removeAll()
+          state = newState
+          updateFlags()
+      }
+}
+

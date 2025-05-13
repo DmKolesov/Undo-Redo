@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		EBE5E1A22DD211CC0037155A /* UndoRedoEditorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1A12DD211CC0037155A /* UndoRedoEditorApp.swift */; };
-		EBE5E1A42DD211CC0037155A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1A32DD211CC0037155A /* ContentView.swift */; };
 		EBE5E1A62DD211CE0037155A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE5E1A52DD211CE0037155A /* Assets.xcassets */; };
 		EBE5E1AA2DD211CE0037155A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBE5E1A92DD211CE0037155A /* Preview Assets.xcassets */; };
 		EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1B12DD2126C0037155A /* PreviewContainer.swift */; };
@@ -28,12 +27,12 @@
 		EBE5E1D72DD250D00037155A /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1D62DD250D00037155A /* FilterView.swift */; };
 		EBE5E1D92DD251AC0037155A /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1D82DD251AC0037155A /* FilterViewModel.swift */; };
 		EBE5E1DB2DD251E80037155A /* CoreImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1DA2DD251E80037155A /* CoreImageService.swift */; };
+		EBE5E1DD2DD262E60037155A /* EditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBE5E1DC2DD262E60037155A /* EditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EBE5E19E2DD211CC0037155A /* UndoRedoEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UndoRedoEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBE5E1A12DD211CC0037155A /* UndoRedoEditorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UndoRedoEditorApp.swift; sourceTree = "<group>"; };
-		EBE5E1A32DD211CC0037155A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		EBE5E1A52DD211CE0037155A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBE5E1A72DD211CE0037155A /* UndoRedoEditor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = UndoRedoEditor.entitlements; sourceTree = "<group>"; };
 		EBE5E1A92DD211CE0037155A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		EBE5E1D62DD250D00037155A /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		EBE5E1D82DD251AC0037155A /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		EBE5E1DA2DD251E80037155A /* CoreImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreImageService.swift; sourceTree = "<group>"; };
+		EBE5E1DC2DD262E60037155A /* EditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,6 @@
 				EBE5E1B32DD213D50037155A /* Models */,
 				EBE5E1B02DD212600037155A /* Helpers */,
 				EBE5E1A12DD211CC0037155A /* UndoRedoEditorApp.swift */,
-				EBE5E1A32DD211CC0037155A /* ContentView.swift */,
 				EBE5E1A52DD211CE0037155A /* Assets.xcassets */,
 				EBE5E1A72DD211CE0037155A /* UndoRedoEditor.entitlements */,
 				EBE5E1A82DD211CE0037155A /* Preview Content */,
@@ -169,6 +168,7 @@
 			isa = PBXGroup;
 			children = (
 				EBE5E1CE2DD234A80037155A /* EditorMainView.swift */,
+				EBE5E1DC2DD262E60037155A /* EditorView.swift */,
 				EBE5E1D02DD236EB0037155A /* EditorMainViewModel.swift */,
 			);
 			path = EditorMainView;
@@ -271,6 +271,7 @@
 				EBE5E1B22DD2126C0037155A /* PreviewContainer.swift in Sources */,
 				EBE5E1CC2DD233CF0037155A /* SelectImageView.swift in Sources */,
 				EBE5E1D92DD251AC0037155A /* FilterViewModel.swift in Sources */,
+				EBE5E1DD2DD262E60037155A /* EditorView.swift in Sources */,
 				EBE5E1B72DD2146F0037155A /* ImageSource.swift in Sources */,
 				EBE5E1BB2DD225180037155A /* ImageErrors.swift in Sources */,
 				EBE5E1DB2DD251E80037155A /* CoreImageService.swift in Sources */,
@@ -278,7 +279,6 @@
 				EBE5E1CF2DD234A80037155A /* EditorMainView.swift in Sources */,
 				EBE5E1BF2DD226360037155A /* PickerView.swift in Sources */,
 				EBE5E1C92DD227E80037155A /* ToolbarViewModel.swift in Sources */,
-				EBE5E1A42DD211CC0037155A /* ContentView.swift in Sources */,
 				EBE5E1B52DD214080037155A /* DrawingTools.swift in Sources */,
 				EBE5E1A22DD211CC0037155A /* UndoRedoEditorApp.swift in Sources */,
 			);
