@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct UndoRedoEditorApp: App {
+
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            EditorMainView()
         }
     }
 }

@@ -43,7 +43,6 @@ import SwiftUI
 //}
 import SwiftUI
 
-/// View для выбора и предпросмотра фильтров
 struct FilterView: View {
     @ObservedObject var viewModel: FilterViewModel
 

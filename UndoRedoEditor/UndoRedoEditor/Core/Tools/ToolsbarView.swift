@@ -16,18 +16,6 @@ struct ToolsView: View {
             HStack(spacing: 20) {
 
                 Button(action: {
-                    print("Готово нажато")
-                    onDone()
-                }) {
-                    Text("Готово")
-                        .font(.system(size: 17, weight: .semibold))
-                        .foregroundColor(viewModel.canUndo ? .blue : .gray)
-                        .padding(.horizontal, 12)
-                        .contentShape(Rectangle())
-                }
-                .disabled(!viewModel.canUndo)
-
-                Button(action: {
                     print(" Undo нажато")
                     viewModel.undo()
                 }) {
